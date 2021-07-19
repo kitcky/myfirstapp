@@ -4,19 +4,26 @@ import numpy as np
 import pandas as pd
 import time
 
-st.header("My first Streamlit App")
+st.header("Welcome to SweetWalley Bakes")
 
 readme = st.checkbox("readme first")
 
 if readme:
 
     st.write("""
-        This is a web app demo using [streamlit](https://streamlit.io/) library. It is hosted in [heroku](https://www.heroku.com/). You may get the codes via [github](https://github.com/richieyuyongpoh/myfirstapp)
+        You’re going to LOVE the authentic nyonya kuih from our panaderia! We provide free delivery for any purchase above RM50. Preorder yours today!)
         """)
 
-    st.write ("For more info, please contact:")
+    st.write ("For pre-order, please contact:")
 
-    st.write("<a href='https://www.linkedin.com/in/yong-poh-yu/'>Dr. Yong Poh Yu </a>", unsafe_allow_html=True)
+    st.write("https://www.instagram.com/sweetwalley/?hl=en>", unsafe_allow_html=True)
+
+
+if show:
+    st.write(pd.DataFrame({
+    'Intplan': ['yes', 'yes', 'yes', 'no'],
+    'Churn Status': [0, 0, 0, 1]
+}))
 
 option = st.sidebar.selectbox(
     'Select a mini project',
